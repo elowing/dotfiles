@@ -1,18 +1,25 @@
 #usr/bin/env zsh
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-brew install asdf
-brew install bat
-brew install chezmoi
+brew install coreutils curl git asdf
+echo 'See below for relevant asdf plugins and versions'
+echo 'https://github.com/asdf-vm/asdf-plugins#plugin-list'
+echo 'https://asdf-vm.com/manage/versions.html'
+
 brew install --cask datweatherdoe
-brew install powerlevel10k
-brew install ripgrep
+
+# better cat, find, ls
+brew install bat chezmoi diff-so-fancy exa fd jq ripgrep powerlevel10k thefuck
+echo 'Install p10k fonts: https://github.com/romkatv/powerlevel10k#manual-font-installation'
+echo 'Then run `p10k configure`'
 
 chezmoi init https://github.com/elowing/dotfiles.git
-echo 'Run `chezmoi diff` to see changes to be made to $HOME'
+echo 'Run `chezmoi diff` to see dotfile changes to be made to $HOME'
 echo 'If those are good, run `chezmoi apply -v`'
 echo 'If not, run `chezmoi edit $FILE`'
 echo 'To pull and update anytime, run `chezmoi update -v`'
 
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+source ~/.zshrc
