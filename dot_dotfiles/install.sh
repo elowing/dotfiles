@@ -12,7 +12,7 @@ echo 'https://asdf-vm.com/manage/versions.html'
 brew install --cask datweatherdoe
 
 # better cat, find, ls
-brew install bat chezmoi diff-so-fancy exa fd jq ripgrep powerlevel10k thefuck
+brew install bat chezmoi colordiff diff-so-fancy exa fd jq ripgrep powerlevel10k thefuck
 echo 'Install p10k fonts: https://github.com/romkatv/powerlevel10k#manual-font-installation'
 echo 'Then run `p10k configure`'
 

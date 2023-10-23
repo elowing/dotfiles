@@ -12,6 +12,7 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 HISTFILE=~/.zsh_history
 HISTSIZE=12000
 SAVEHIST=10000
+bindkey \^U backward-kill-line
 setopt histignorealldups
 setopt sharehistory
 
