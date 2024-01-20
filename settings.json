@@ -48,5 +48,5 @@
 	"editor.multiCursorModifier": "ctrlCmd",
 	"prettier.semi": false,
 	"prettier.useTabs": true,
-	"editor.occurrencesHighlight": false
+	"editor.occurrencesHighlight": "off"
 }
