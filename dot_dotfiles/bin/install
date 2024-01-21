@@ -5,14 +5,15 @@ echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install coreutils curl git asdf
-echo 'See below for relevant asdf plugins and versions'
-echo 'https://github.com/asdf-vm/asdf-plugins#plugin-list'
-echo 'https://asdf-vm.com/manage/versions.html'
-
 brew install --cask datweatherdoe
 
 # better cat, find, ls
 brew install bat chezmoi colordiff diff-so-fancy exa fd jq ripgrep powerlevel10k thefuck
+
+echo 'See below for relevant asdf plugins and versions'
+echo 'https://github.com/asdf-vm/asdf-plugins#plugin-list'
+echo 'https://asdf-vm.com/manage/versions.html'
+
 echo 'Install p10k fonts: https://github.com/romkatv/powerlevel10k#manual-font-installation'
 echo 'Then run `p10k configure`'
 
