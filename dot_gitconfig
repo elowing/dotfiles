@@ -6,9 +6,31 @@
 [includeIf "gitdir:~/code/play/"]
     path = ~/code/play/.gitconfig
 
+[branch]
+    sort = commiterdate
+[commit]
+    verbose = true
 [core]
+    editor = code
 	pager = "diff-so-fancy | less --tabs=4 -RFX"
+[credential]
+    helper = osxkeychain
+[diff]
+    algorithm = histogram
+[fetch]
+    prune = true
+    pruneTags = true
+[help]
+    autocorrect = prompt
+[init]
+    defaultBranch = main
 [interactive]
 	diffFilter = "diff-so-fancy --patch"
+[merge]
+    conflictStyle = zdiff3
 [push]
-	autoSetupRemote = true
+	default = current
+    followTags = true
+[rebase]
+    autostash = true
+    updateRefs = true
