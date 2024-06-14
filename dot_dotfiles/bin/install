@@ -8,7 +8,7 @@ brew install coreutils curl git asdf
 brew install --cask datweatherdoe
 
 # better cat, find, ls
-brew install bat chezmoi colordiff diff-so-fancy exa fd jq ripgrep powerlevel10k thefuck
+brew install bat chezmoi colordiff diff-so-fancy eza fd jq ripgrep powerlevel10k thefuck
 
 echo 'See below for relevant asdf plugins and versions'
 echo 'https://github.com/asdf-vm/asdf-plugins#plugin-list'

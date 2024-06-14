@@ -19,6 +19,6 @@ alias gsc="git switch -c $1"
 alias ag="rg"
 alias cdiff="colordiff"
 alias cm="chezmoi"
-alias sl="exa -ahlF --color-scale --icons --group-directories-first"
+alias sl="eza -ahlF --color-scale --icons --group-directories-first"
 alias rmi="rm -i"
 alias td="termdown -asWT StrategyLift" # colon-separated, no seconds, don't update window title, text above timer
