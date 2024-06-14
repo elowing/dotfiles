@@ -1,5 +1,6 @@
 [user]
     name = Em Lowing
+    email = elowing@gmail.com
 
 [includeIf "gitdir:~/code/work/"]
     path = ~/code/work/.gitconfig
