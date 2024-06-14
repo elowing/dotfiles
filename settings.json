@@ -48,5 +48,6 @@
 	"editor.multiCursorModifier": "ctrlCmd",
 	"prettier.semi": false,
 	"prettier.useTabs": true,
-	"editor.occurrencesHighlight": "off"
+	"editor.occurrencesHighlight": "off",
+	"workbench.preferredLightColorTheme": "Noctis Lux"
 }
