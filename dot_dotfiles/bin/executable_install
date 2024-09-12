@@ -23,4 +23,7 @@ echo 'If those are good, run `chezmoi apply -v`'
 echo 'If not, run `chezmoi edit $FILE`'
 echo 'To pull and update anytime, run `chezmoi update -v`'
 
+echo 'Enable key repeat in VSCode Vim'
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 source ~/.zshrc
