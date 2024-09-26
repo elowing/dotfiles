@@ -16,7 +16,7 @@
 	"terminal.integrated.confirmOnExit": "always",
 	"terminal.integrated.confirmOnKill": "always",
 	"terminal.integrated.copyOnSelection": true,
-	"terminal.integrated.cwd": "${cwd}",
+	"terminal.integrated.cwd": "~",
 	"terminal.integrated.defaultLocation": "editor",
 	"terminal.integrated.defaultProfile.osx": "zsh",
 	"terminal.integrated.enableBell": true,
