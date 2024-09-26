@@ -49,5 +49,6 @@
 	"prettier.semi": false,
 	"prettier.useTabs": true,
 	"editor.occurrencesHighlight": "off",
-	"workbench.preferredLightColorTheme": "Noctis Lux"
+	"workbench.preferredLightColorTheme": "Noctis Lux",
+	"terminal.integrated.shellIntegration.history": 10000
 }
