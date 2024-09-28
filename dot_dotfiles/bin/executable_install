@@ -1,23 +1,46 @@
-#usr/bin/env zsh
+#!/bin/sh
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# Install Homebrew
+if ! command -v brew > /dev/null 2>&1
+then
+    # shellcheck disable=SC2028
+    echo '\nInstalling Homebrew...'
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo "eval $(/opt/homebrew/bin/brew shellenv)" >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
-brew install coreutils curl git asdf
-brew install --cask datweatherdoe
+# Install asdf and its prereq packages
+pkgs="coreutils curl git asdf"
+for pkg in $pkgs; do
+    if ! brew ls --versions "$pkg" > /dev/null
+    then
+        brew install "$pkg"
+    fi
+done
 
-# better cat, find, ls
-brew install bat colordiff diff-so-fancy eza fd jq maccy ripgrep powerlevel10k thefuck
+# better cat (bat), find (fd), grep (ripgrep), ls (eza)
+the_rest="bat colordiff diff-so-fancy eza fd jq maccy ripgrep powerlevel10k thefuck"
+for pk in $the_rest; do
+    if ! brew ls --versions "$pk" > /dev/null
+    then
+        brew install "$pk"
+    fi
+done
 
+# Install by cask
+brew ls --versions datweatherdoe > /dev/null || brew install --cask datweatherdoe
+
+# shellcheck disable=SC2028
 echo '\nSee below for relevant asdf plugins and versions'
 echo 'https://github.com/asdf-vm/asdf-plugins#plugin-list'
 echo 'https://asdf-vm.com/manage/versions.html'
 
 echo 'Install p10k fonts: https://github.com/romkatv/powerlevel10k#manual-font-installation'
+# shellcheck disable=SC2016
 echo 'Then run `p10k configure`'
 
-# enable key repeat in VSCode Vim
+# enable key repeat for vim in VSCode
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
-source ~/.zshrc
+. /Users/em/.zshrc
