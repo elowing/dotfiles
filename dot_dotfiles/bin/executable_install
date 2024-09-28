@@ -8,7 +8,7 @@ brew install coreutils curl git asdf
 brew install --cask datweatherdoe
 
 # better cat, find, ls
-brew install bat chezmoi colordiff diff-so-fancy eza fd jq ripgrep powerlevel10k thefuck
+brew install bat colordiff diff-so-fancy eza fd jq maccy ripgrep powerlevel10k thefuck
 
 echo '\nSee below for relevant asdf plugins and versions'
 echo 'https://github.com/asdf-vm/asdf-plugins#plugin-list'
@@ -16,12 +16,6 @@ echo 'https://asdf-vm.com/manage/versions.html'
 
 echo 'Install p10k fonts: https://github.com/romkatv/powerlevel10k#manual-font-installation'
 echo 'Then run `p10k configure`'
-
-chezmoi init https://github.com/elowing/dotfiles.git
-echo 'Run `chezmoi diff` to see dotfile changes to be made to $HOME'
-echo 'If those are good, run `chezmoi apply -v`'
-echo 'If not, run `chezmoi edit $FILE`'
-echo 'To pull and update anytime, run `chezmoi update -v`\n'
 
 # enable key repeat in VSCode Vim
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
