@@ -20,9 +20,6 @@
 	"terminal.integrated.defaultLocation": "editor",
 	"terminal.integrated.defaultProfile.osx": "zsh",
 	"terminal.integrated.enableMultiLinePasteWarning": false,
-	"terminal.integrated.env.osx": {
-		"VAULT_ADDR": "https://or.vault.comcast.com"
-	},
 	"terminal.integrated.fontFamily": "MesloLGS NF",
 	"terminal.integrated.showExitAlert": false,
 	"terminal.integrated.tabs.focusMode": "singleClick",
