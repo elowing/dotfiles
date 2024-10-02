@@ -1,5 +1,0 @@
-#!/bin/zsh
-
-echo 'Saving VSCode extensions...'
-code --list-extensions > ~/.dotfiles/vscode-extensions
-chezmoi status
