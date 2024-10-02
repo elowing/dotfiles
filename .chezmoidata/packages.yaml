@@ -11,9 +11,9 @@ packages:
       - "eza"
       - "fd"
       - "jq"
-      - "maccy"
       - "ripgrep"
       - "powerlevel10k"
       - "thefuck"
     casks:
       - "datweatherdoe"
+      - "maccy"
