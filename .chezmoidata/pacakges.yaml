@@ -1,0 +1,19 @@
+packages:
+  darwin:
+    brews:
+      - "coreutils"
+      - "curl"
+      - "git"
+      - "asdf"
+      - "bat"
+      - "colordiff"
+      - "diff-so-fancy"
+      - "eza"
+      - "fd"
+      - "jq"
+      - "maccy"
+      - "ripgrep"
+      - "powerlevel10k"
+      - "thefuck"
+    casks:
+      - "datweatherdoe"
