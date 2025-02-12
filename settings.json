@@ -48,5 +48,9 @@
 	"workbench.preferredLightColorTheme": "One Dark Pro",
 	"terminal.integrated.shellIntegration.history": 10000,
 	"editor.insertSpaces": false,
-	"editor.indentSize": "tabSize"
+	"editor.indentSize": "tabSize",
+	"files.trimTrailingWhitespace": true,
+	"rainbow_csv.csv_lint_detect_trailing_spaces": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"git.openRepositoryInParentFolders": "always"
 }
