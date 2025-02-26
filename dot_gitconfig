@@ -8,19 +8,26 @@
     path = ~/code/play/.gitconfig
 
 [branch]
-    sort = commiterdate
+    sort = -commiterdate
+[column]
+    ui = auto
 [commit]
     verbose = true
 [core]
     editor = code --wait
+    excludesfile = ~/.gitignore
 	pager = "diff-so-fancy | less --tabs=4 -RFX"
 [credential]
     helper = osxkeychain
 [diff]
     algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
 [fetch]
     prune = true
     pruneTags = true
+    all = true
 [help]
     autocorrect = prompt
 [init]
@@ -29,9 +36,18 @@
 	diffFilter = "diff-so-fancy --patch"
 [merge]
     conflictStyle = zdiff3
+[pull]
+    rebase = true
 [push]
-	default = current
+	default = simple
+    autoSetupRemote = true
     followTags = true
 [rebase]
+	autoSquash = true
     autostash = true
     updateRefs = true
+[rerere]
+    enabled = true
+    autoUpdate = true
+[tag]
+    sort = version:refname
