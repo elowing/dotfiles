@@ -16,12 +16,10 @@
 	"terminal.integrated.confirmOnExit": "always",
 	"terminal.integrated.confirmOnKill": "always",
 	"terminal.integrated.copyOnSelection": true,
-	"terminal.integrated.cwd": "~",
 	"terminal.integrated.defaultLocation": "editor",
 	"terminal.integrated.defaultProfile.osx": "zsh",
-	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
 	"terminal.integrated.fontFamily": "MesloLGS NF",
-	"terminal.integrated.showExitAlert": false,
 	"terminal.integrated.tabs.focusMode": "singleClick",
 	"vim.hlsearch": true,
 	"vim.normalModeKeyBindingsNonRecursive": [
