@@ -30,5 +30,4 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 # Added by Windsurf
 export PATH="/Users/em/.codeium/windsurf/bin:$PATH"
 fpath=(/Users/em/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
+eval "$(direnv hook zsh)"
